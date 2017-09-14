@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieManager", "MovieManager\MovieManager.csproj", "{EC18197E-18F6-45EF-87A5-04C7381830E2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieManager.Tests", "MovieManager.Tests\MovieManager.Tests.csproj", "{C8922DF7-EA0B-4E5A-BCE3-0CA734B76D7B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EC18197E-18F6-45EF-87A5-04C7381830E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC18197E-18F6-45EF-87A5-04C7381830E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC18197E-18F6-45EF-87A5-04C7381830E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC18197E-18F6-45EF-87A5-04C7381830E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8922DF7-EA0B-4E5A-BCE3-0CA734B76D7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8922DF7-EA0B-4E5A-BCE3-0CA734B76D7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8922DF7-EA0B-4E5A-BCE3-0CA734B76D7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8922DF7-EA0B-4E5A-BCE3-0CA734B76D7B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
