@@ -25,6 +25,15 @@
 				deffered.resolve(failed);
 			});
 			return deffered.promise;
+		},
+		saveMovie: function (movie) {
+			var deffered = $q.defer();
+			$http.post(window.location.origin + '/api/movies', movie).then(function (response) {
+				deffered.resolve(response);
+			}, function (failed) {
+				deffered.resolve(failed);
+			});
+			return deffered.promise;
 		}
 	}
 }])

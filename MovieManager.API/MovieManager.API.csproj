@@ -182,6 +182,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </Content>
     <Content Include="www\app.js" />
+    <Content Include="www\assets\dirPagination.js" />
     <Content Include="www\controllers\editCtrl.js" />
     <Content Include="www\controllers\mainCtrl.js" />
     <Content Include="index.html" />

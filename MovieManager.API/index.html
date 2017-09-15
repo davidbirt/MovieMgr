@@ -1,16 +1,25 @@
 ﻿<!DOCTYPE html>
 <html ng-app="movies">
 <head>
-    <meta charset="utf-8" />
-    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Daves Awesome Movie App</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 </head>
 <body>
-    <ng-view></ng-view>
+    <div class="container">
+        <ng-view></ng-view>
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-route.js"></script>
+    <script src="/www/assets/dirPagination.js"></script>
     <script src="/www/app.js"></script>
+
+    <!--Controllers-->
     <script src="/www/controllers/mainCtrl.js"></script>
     <script src="/www/controllers/editCtrl.js"></script>
+    
+    <!--Services-->
     <script src="/www/services/movieSrv.js"></script>
 </body>
 </html>

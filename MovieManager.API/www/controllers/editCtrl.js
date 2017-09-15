@@ -5,4 +5,10 @@
 	movies.fetchMovie(routes.movieId).then(function (response) {
 		$scope.movie = response.data;
 	});
+
+	$scope.saveMovie = function () {
+		movies.saveMovie($scope.movie).then(function (response) {
+			console.log(response);
+		});
+	};
 }]);

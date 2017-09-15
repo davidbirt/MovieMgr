@@ -1,16 +1,16 @@
 ﻿<div ng-controller="mainCtrl">
 
-    <table id="all-movies" cellspacing="0" cellpadding="0">
+    <table id="all-movies" cellspacing="0" cellpadding="0" class="table table-striped table-hover">
         <thead>
             <tr>
-                <th ng-click="sortKey = 'ranking'">Show Title<span class="icon icon-angle-double-down"></span></th>
-                <th ng-click="sortKey = 'location'">Genre <span class="icon icon-angle-double-down"></span></th>
-                <th ng-click="sortKey = 'locationState'">Director <span class="icon icon-angle-double-down"></span></th>
-                <th ng-click="sortKey = 'screened'">Length <span class="icon icon-angle-double-down"></span></th>
+                <th ng-click="sortKey = 'title'">Show Title<span class="icon icon-angle-double-down"></span></th>
+                <th ng-click="sortKey = 'mainGenreName'">Genre <span class="icon icon-angle-double-down"></span></th>
+                <th ng-click="sortKey = 'directorName'">Director <span class="icon icon-angle-double-down"></span></th>
+                <th ng-click="sortKey = 'length'">Length <span class="icon icon-angle-double-down"></span></th>
             </tr>
         </thead>
         <tbody>
-            <tr class="animate-repeat" ng-repeat="mv in moviesList.list | filter : search | orderBy : sortKey" ng-click="log(mv.id)">
+            <tr class="animate-repeat" dir-paginate="mv in moviesList.list|orderBy:sortKey:reverse|itemsPerPage:10" ng-click="log(mv.id)" >
                 <td>{{mv.title}}</td>
                 <td>{{mv.mainGenreName}}</td>
                 <td>{{mv.directorName}}</td>
@@ -18,4 +18,9 @@
             </tr>
         <tbody>
     </table>
+    <dir-pagination-controls max-size="10"
+                             direction-links="true"
+                             boundary-links="true">
+    </dir-pagination-controls>
+   
 </div>
