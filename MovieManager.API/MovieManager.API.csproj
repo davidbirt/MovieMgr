@@ -181,6 +181,11 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
+    <Content Include="www\app.js" />
+    <Content Include="www\controllers\mainCtrl.js" />
+    <Content Include="index.html" />
+    <Content Include="www\services\movieSrv.js" />
+    <Content Include="www\views\movies-list.html" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
