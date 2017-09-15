@@ -1,40 +1,39 @@
 ﻿<div ng-controller="editCtrl">
+    <button type="submit" class="btn btn-primary" ng-click="saveMovie()">Save</button>
     <div class="form-group row">
-        <label for="example-text-input" class="col-2 col-form-label">Title</label>
+        <label class="col-2 col-form-label">Title</label>
         <div class="col-10">
-            <input class="form-control" type="text" ng-model="movie.title" id="example-text-input">
+            <input class="form-control" type="text" ng-model="movie.title" >
         </div>
     </div>
     <div class="form-group row">
-        <label for="example-search-input" class="col-2 col-form-label">Main Genre</label>
+        <label class="col-2 col-form-label">Main Genre</label>
         <div class="col-10">
-            <input class="form-control" type="search" ng-model="movie.mainGenreName" id="example-search-input">
+            <input class="form-control" type="text" ng-model="movie.mainGenreName" >
         </div>
     </div>
     <div class="form-group row">
-        <label for="example-email-input" class="col-2 col-form-label">Director</label>
+        <label class="col-2 col-form-label">Director</label>
         <div class="col-10">
-            <input class="form-control" type="email" ng-model="movie.directorName" id="example-email-input">
+            <input class="form-control" type="text" ng-model="movie.directorName">
         </div>
     </div>
     <div class="form-group row">
-        <label for="example-url-input" class="col-2 col-form-label">Length(mins)</label>
+        <label class="col-2 col-form-label">Length(mins)</label>
         <div class="col-10">
-            <input class="form-control" type="url" ng-model="movie.length" id="example-url-input">
+            <input class="form-control" type="text" ng-model="movie.length" >
         </div>
     </div>
     <div class="form-group row">
-        <label for="example-tel-input" class="col-2 col-form-label">Release Date</label>
+        <label  class="col-2 col-form-label">Release Date</label>
         <div class="col-10">
-            <input class="form-control" type="tel" ng-model="movie.dateReleased" id="example-tel-input">
+            <input class="form-control" type="text" ng-model="movie.dateReleased">
         </div>
     </div>
     <div class="form-group row">
-        <label for="example-password-input" class="col-2 col-form-label">Description</label>
+        <label class="col-2 col-form-label">Description</label>
         <div class="col-10">
             <textarea class="form-control" ng-model="movie.description" />
         </div>
     </div>
-    <button type="button" class="btn btn-primary" ng-click="saveMovie()">Save</button>
 </div>
-<button type="button" class="btn btn-primary">Save</button>
