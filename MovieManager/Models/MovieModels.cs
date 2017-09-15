@@ -9,10 +9,13 @@ namespace MovieManager.Models
     public class MovieDTO
     {
         public string Title { get; set; }
+        public int Id { get; set; }
         public string DirectorName { get; set; }
         public string MainGenreName { get; set; }
         public int Length { get; set; }
-        public IEnumerable<string> SubGenres { get; set; }
+        public IEnumerable<Genre> SubGenres { get; set; }
+        public DateTime DateReleased { get; set; }
+        public string Description { get; set; }
     }
 
     public class Movie
@@ -66,11 +69,5 @@ namespace MovieManager.Models
             this.Movies = new HashSet<Movie>();
         }
         public virtual ICollection<Movie> Movies { get; set; }
-    }
-
-    public enum GenreType
-    {
-        Sub = 0,
-        Main = 1
     }
 }

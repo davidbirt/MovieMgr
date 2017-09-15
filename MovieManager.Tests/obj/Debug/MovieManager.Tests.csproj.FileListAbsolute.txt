@@ -60,3 +60,11 @@ C:\Projects\SkillsAssessment\MovieManager.Tests\bin\Debug\roslyn\vbc.exe.config
 C:\Projects\SkillsAssessment\MovieManager.Tests\bin\Debug\roslyn\vbc.rsp
 C:\Projects\SkillsAssessment\MovieManager.Tests\bin\Debug\roslyn\VBCSCompiler.exe
 C:\Projects\SkillsAssessment\MovieManager.Tests\bin\Debug\roslyn\VBCSCompiler.exe.config
+C:\Projects\SkillsAssessment\MovieManager.Tests\bin\Debug\AutoMapper.dll
+C:\Projects\SkillsAssessment\MovieManager.Tests\bin\Debug\AutoMapper.xml
+C:\Projects\SkillsAssessment\MovieManager.Tests\bin\Debug\Autofac.dll
+C:\Projects\SkillsAssessment\MovieManager.Tests\bin\Debug\Autofac.Integration.WebApi.dll
+C:\Projects\SkillsAssessment\MovieManager.Tests\bin\Debug\Autofac.Integration.Mvc.dll
+C:\Projects\SkillsAssessment\MovieManager.Tests\bin\Debug\Autofac.xml
+C:\Projects\SkillsAssessment\MovieManager.Tests\bin\Debug\Autofac.Integration.WebApi.xml
+C:\Projects\SkillsAssessment\MovieManager.Tests\bin\Debug\Autofac.Integration.Mvc.xml

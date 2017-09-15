@@ -1,21 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Data.Entity;
-using System.Data.Entity.Infrastructure;
-using System.Linq;
-using System.Net;
-using System.Net.Http;
+﻿using System.Linq;
 using System.Threading.Tasks;
 using System.Web.Http;
-using System.Web.Http.Description;
 using MovieManager.Models;
-using System.Collections;
+using AutoMapper;
 
 namespace MovieManager.Controllers
 {
     public class MoviesController : ApiController
     {
+        IMapper _mapper;
+        public MoviesController(IMapper mapper)
+        {
+            _mapper = mapper;
+        }
         private MovieContext db = new MovieContext();
 
         // GET: api/Movies
@@ -26,82 +23,36 @@ namespace MovieManager.Controllers
         }
    
         // GET: api/Movies/5
-        [ResponseType(typeof(Movie))]
-        public async Task<IHttpActionResult> GetMovie(int id)
+        public IHttpActionResult GetMovie(int id)
         {
-            Movie movie = await db.Movies.FindAsync(id);
+            MovieDTO movie = db.GetMovie(id); //await db.Movies.FindAsync(id);
             if (movie == null)
             {
                 return NotFound();
             }
 
             return Ok(movie);
-        }
-
-        // PUT: api/Movies/5
-        [ResponseType(typeof(void))]
-        public async Task<IHttpActionResult> PutMovie(int id, Movie movie)
-        {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
-
-            if (id != movie.Id)
-            {
-                return BadRequest();
-            }
-
-            db.Entry(movie).State = EntityState.Modified;
-
-            try
-            {
-                await db.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!MovieExists(id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
-            }
-
-            return StatusCode(HttpStatusCode.NoContent);
         }
 
         // POST: api/Movies
-        [ResponseType(typeof(Movie))]
-        public async Task<IHttpActionResult> PostMovie(Movie movie)
+        public async Task<IHttpActionResult> PostMovie(MovieDTO movie)
         {
-            if (!ModelState.IsValid)
+            try
             {
-                return BadRequest(ModelState);
+                if (!ModelState.IsValid)
+                {
+                    return BadRequest(ModelState);
+                }
+
+                Movie instance = db.Movies.First(mv => mv.Id == movie.Id);
+                instance = _mapper.Map<MovieDTO, Movie>(movie, instance);
+                int results = await db.SaveChangesAsync();
+                return Ok($"{results} records affected.");
             }
-
-            db.Movies.Add(movie);
-            await db.SaveChangesAsync();
-
-            return CreatedAtRoute("DefaultApi", new { id = movie.Id }, movie);
-        }
-
-        // DELETE: api/Movies/5
-        [ResponseType(typeof(Movie))]
-        public async Task<IHttpActionResult> DeleteMovie(int id)
-        {
-            Movie movie = await db.Movies.FindAsync(id);
-            if (movie == null)
+            catch (System.Exception ex)
             {
-                return NotFound();
+                return BadRequest(ex.Message);
             }
-
-            db.Movies.Remove(movie);
-            await db.SaveChangesAsync();
-
-            return Ok(movie);
         }
 
         protected override void Dispose(bool disposing)

@@ -74,3 +74,12 @@ C:\Projects\SkillsAssessment\MovieManager\bin\EntityFramework.dll
 C:\Projects\SkillsAssessment\MovieManager\bin\EntityFramework.SqlServer.dll
 C:\Projects\SkillsAssessment\MovieManager\bin\EntityFramework.xml
 C:\Projects\SkillsAssessment\MovieManager\bin\EntityFramework.SqlServer.xml
+C:\Projects\SkillsAssessment\MovieManager\obj\Debug\MovieManager.csprojResolveAssemblyReference.cache
+C:\Projects\SkillsAssessment\MovieManager\bin\AutoMapper.dll
+C:\Projects\SkillsAssessment\MovieManager\bin\AutoMapper.xml
+C:\Projects\SkillsAssessment\MovieManager\bin\Autofac.dll
+C:\Projects\SkillsAssessment\MovieManager\bin\Autofac.Integration.Mvc.dll
+C:\Projects\SkillsAssessment\MovieManager\bin\Autofac.xml
+C:\Projects\SkillsAssessment\MovieManager\bin\Autofac.Integration.Mvc.xml
+C:\Projects\SkillsAssessment\MovieManager\bin\Autofac.Integration.WebApi.dll
+C:\Projects\SkillsAssessment\MovieManager\bin\Autofac.Integration.WebApi.xml

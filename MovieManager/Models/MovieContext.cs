@@ -27,7 +27,10 @@ namespace MovieManager.Models
                         Length = x.Length,
                         MainGenreName = x.MainGenre.Name,
                         Title = x.Title,
-                        SubGenres = x.SubGenres.ToList().Select(n => n.Name)
+                        SubGenres = x.SubGenres.ToList().Select(n => new Genre() {Id=n.Id, Name = n.Name }),
+                        Id = x.Id,
+                        DateReleased = x.ReleaseDate,
+                        Description = x.Description
                     });
             }
         }
@@ -35,9 +38,17 @@ namespace MovieManager.Models
         public DbSet<Genre> Genres { get; set; }
         public DbSet<SubGenre> SubGenres { get; set; }
 
-        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        public MovieDTO GetMovie(int id)
         {
-            base.OnModelCreating(modelBuilder);
+            try
+            {
+                return MoviesDTO.First(mv => mv.Id == id);
+            }
+            catch (Exception)
+            {
+                // todo : Log off the error
+                return null;
+            }
         }
     }
 
