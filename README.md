@@ -1,37 +1,12 @@
-## Welcome to GitHub Pages
+## Welcome to Movie Manager
 
-You can use the [editor on GitHub](https://github.com/davidbirt/MovieMgr/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+This is an angular 1.5X project laying on top of .NET WEB API and alot of self sacrifice ;)
+There is a test in the unit test project that will build out a database for you. just update the config with your own connection string.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Whats the state of things?
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/davidbirt/MovieMgr/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+There are a few outstanding items. If anyone wants to pull and take a stab at it, they are welcome to!
+1. Authentication
+2. Adding movies
+3. Test coverage for the API layer and e2e for FE functionality.
+4. Need to apply a design template or do something terrific with bootstrap.
