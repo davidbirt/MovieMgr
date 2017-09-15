@@ -1,3 +1,21 @@
 ﻿<div ng-controller="mainCtrl">
-    {{message}}
+
+    <table id="all-movies" cellspacing="0" cellpadding="0">
+        <thead>
+            <tr>
+                <th ng-click="sortKey = 'ranking'">Show Title<span class="icon icon-angle-double-down"></span></th>
+                <th ng-click="sortKey = 'location'">Genre <span class="icon icon-angle-double-down"></span></th>
+                <th ng-click="sortKey = 'locationState'">Director <span class="icon icon-angle-double-down"></span></th>
+                <th ng-click="sortKey = 'screened'">Length <span class="icon icon-angle-double-down"></span></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="animate-repeat" ng-repeat="mv in moviesList.list | filter : search | orderBy : sortKey" ng-click="log(mv.id)">
+                <td>{{mv.title}}</td>
+                <td>{{mv.mainGenreName}}</td>
+                <td>{{mv.directorName}}</td>
+                <td>{{mv.length}}</td>
+            </tr>
+        <tbody>
+    </table>
 </div>

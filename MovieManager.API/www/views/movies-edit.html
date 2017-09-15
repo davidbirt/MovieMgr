@@ -1,0 +1,38 @@
+﻿<div ng-controller="editCtrl">
+    <div class="form-group row">
+        <label for="example-text-input" class="col-2 col-form-label">Title</label>
+        <div class="col-10">
+            <input class="form-control" type="text" ng-model="movie.title" id="example-text-input">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="example-search-input" class="col-2 col-form-label">Main Genre</label>
+        <div class="col-10">
+            <input class="form-control" type="search" ng-model="movie.mainGenreName" id="example-search-input">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="example-email-input" class="col-2 col-form-label">Director</label>
+        <div class="col-10">
+            <input class="form-control" type="email" ng-model="movie.directorName" id="example-email-input">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="example-url-input" class="col-2 col-form-label">Length(mins)</label>
+        <div class="col-10">
+            <input class="form-control" type="url" ng-model="movie.length" id="example-url-input">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="example-tel-input" class="col-2 col-form-label">Release Date</label>
+        <div class="col-10">
+            <input class="form-control" type="tel" ng-model="movie.dateReleased" id="example-tel-input">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="example-password-input" class="col-2 col-form-label">Description</label>
+        <div class="col-10">
+            <textarea class="form-control" ng-model="movie.description" />
+        </div>
+    </div>
+</div>

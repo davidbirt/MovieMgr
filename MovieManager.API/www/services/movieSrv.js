@@ -8,9 +8,18 @@
 	return {
 		movies: movieData,
 		setMovieData: setMovieData,
-		fetchMovieq: function (companyId) {
+		fetchMovies: function () {
 			var deffered = $q.defer();
-			$http.get(window.location.href + '/api/movies').then(function (response) {
+			$http.get(window.location.origin + '/api/movies').then(function (response) {
+				deffered.resolve(response);
+			}, function (failed) {
+				deffered.resolve(failed);
+			});
+			return deffered.promise;
+		},
+		fetchMovie: function (id) {
+			var deffered = $q.defer();
+			$http.get(window.location.origin + '/api/movies/' + id).then(function (response) {
 				deffered.resolve(response);
 			}, function (failed) {
 				deffered.resolve(failed);
