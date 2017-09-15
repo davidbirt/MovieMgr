@@ -6,12 +6,11 @@ using System.Text;
 using System.Web.Http;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using MovieManager;
-using MovieManager.Controllers;
-using MovieManager.Models;
 using System.Net;
 using System.IO;
 using Newtonsoft.Json.Linq;
 using System.Threading;
+using MovieManager.API.Models;
 
 namespace MovieManager.Tests.Controllers
 {

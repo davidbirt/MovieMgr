@@ -4,7 +4,7 @@ using System.Data.Entity;
 using System.Linq;
 using System.Web;
 
-namespace MovieManager.Models
+namespace MovieManager.API.Models
 {
     public class MovieContext : DbContext
     {

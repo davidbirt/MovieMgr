@@ -9,13 +9,13 @@ using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
 using AutoMapper;
-using MovieManager.Models;
+using MovieManager.API.Models;
 using Autofac;
 using Autofac.Integration.Mvc;
 using Autofac.Integration.WebApi;
 using System.Reflection;
 
-namespace MovieManager
+namespace MovieManager.API
 {
     public class WebApiApplication : System.Web.HttpApplication
     {

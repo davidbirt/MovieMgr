@@ -106,8 +106,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MovieManager\MovieManager.API.csproj">
-      <Project>{EC18197E-18F6-45EF-87A5-04C7381830E2}</Project>
+    <ProjectReference Include="..\MovieManager.API\MovieManager.API.csproj">
+      <Project>{ec18197e-18f6-45ef-87a5-04c7381830e2}</Project>
       <Name>MovieManager.API</Name>
     </ProjectReference>
   </ItemGroup>

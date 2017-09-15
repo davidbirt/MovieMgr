@@ -1,10 +1,10 @@
 ﻿using System.Linq;
 using System.Threading.Tasks;
 using System.Web.Http;
-using MovieManager.Models;
+using MovieManager.API.Models;
 using AutoMapper;
 
-namespace MovieManager.Controllers
+namespace MovieManager.API.Controllers
 {
     public class MoviesController : ApiController
     {
