@@ -106,9 +106,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MovieManager\MovieManager.csproj">
+    <ProjectReference Include="..\MovieManager\MovieManager.API.csproj">
       <Project>{EC18197E-18F6-45EF-87A5-04C7381830E2}</Project>
-      <Name>MovieManager</Name>
+      <Name>MovieManager.API</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

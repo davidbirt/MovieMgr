@@ -1,10 +1,8 @@
-C:\Projects\SkillsAssessment\MovieManager.Tests\bin\Debug\ApplicationInsights.config
 C:\Projects\SkillsAssessment\MovieManager.Tests\bin\Debug\MovieManager.Tests.dll.config
 C:\Projects\SkillsAssessment\MovieManager.Tests\bin\Debug\MovieManager.Tests.dll
 C:\Projects\SkillsAssessment\MovieManager.Tests\bin\Debug\MovieManager.Tests.pdb
 C:\Projects\SkillsAssessment\MovieManager.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
 C:\Projects\SkillsAssessment\MovieManager.Tests\bin\Debug\Microsoft.Web.Infrastructure.dll
-C:\Projects\SkillsAssessment\MovieManager.Tests\bin\Debug\MovieManager.dll
 C:\Projects\SkillsAssessment\MovieManager.Tests\bin\Debug\Newtonsoft.Json.dll
 C:\Projects\SkillsAssessment\MovieManager.Tests\bin\Debug\System.Net.Http.Formatting.dll
 C:\Projects\SkillsAssessment\MovieManager.Tests\bin\Debug\System.Web.Helpers.dll
@@ -16,8 +14,6 @@ C:\Projects\SkillsAssessment\MovieManager.Tests\bin\Debug\System.Web.WebPages.De
 C:\Projects\SkillsAssessment\MovieManager.Tests\bin\Debug\System.Web.WebPages.dll
 C:\Projects\SkillsAssessment\MovieManager.Tests\bin\Debug\System.Web.WebPages.Razor.dll
 C:\Projects\SkillsAssessment\MovieManager.Tests\bin\Debug\EntityFramework.dll
-C:\Projects\SkillsAssessment\MovieManager.Tests\bin\Debug\MovieManager.pdb
-C:\Projects\SkillsAssessment\MovieManager.Tests\bin\Debug\MovieManager.dll.config
 C:\Projects\SkillsAssessment\MovieManager.Tests\bin\Debug\Newtonsoft.Json.xml
 C:\Projects\SkillsAssessment\MovieManager.Tests\bin\Debug\System.Net.Http.Formatting.xml
 C:\Projects\SkillsAssessment\MovieManager.Tests\bin\Debug\System.Web.Helpers.xml
@@ -68,3 +64,6 @@ C:\Projects\SkillsAssessment\MovieManager.Tests\bin\Debug\Autofac.Integration.Mv
 C:\Projects\SkillsAssessment\MovieManager.Tests\bin\Debug\Autofac.xml
 C:\Projects\SkillsAssessment\MovieManager.Tests\bin\Debug\Autofac.Integration.WebApi.xml
 C:\Projects\SkillsAssessment\MovieManager.Tests\bin\Debug\Autofac.Integration.Mvc.xml
+C:\Projects\SkillsAssessment\MovieManager.Tests\bin\Debug\MovieManager.API.dll
+C:\Projects\SkillsAssessment\MovieManager.Tests\bin\Debug\MovieManager.API.pdb
+C:\Projects\SkillsAssessment\MovieManager.Tests\bin\Debug\MovieManager.API.dll.config

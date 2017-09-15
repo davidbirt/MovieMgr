@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26430.16
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieManager", "MovieManager\MovieManager.csproj", "{EC18197E-18F6-45EF-87A5-04C7381830E2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieManager.API", "MovieManager\MovieManager.API.csproj", "{EC18197E-18F6-45EF-87A5-04C7381830E2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieManager.Tests", "MovieManager.Tests\MovieManager.Tests.csproj", "{C8922DF7-EA0B-4E5A-BCE3-0CA734B76D7B}"
 EndProject
